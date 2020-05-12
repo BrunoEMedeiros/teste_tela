@@ -12,7 +12,8 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:testetela/helper.dart' as globals;
 import 'package:testetela/models/usuario.dart';
-const url = "http://192.168.0.100:3333";
+
+const url = "http://192.168.0.103:3333";
 
 
 class Home extends StatefulWidget {
@@ -39,10 +40,11 @@ class _HomeState extends State<Home> {
       }
     });
   }
+  TextEditingController _controllerSenha = TextEditingController();
   /*
 
   TextEditingController _controllerLogin = TextEditingController();
-  TextEditingController _controllerSenha = TextEditingController();
+
 
 
   _logar() async{
@@ -151,7 +153,7 @@ class _HomeState extends State<Home> {
                         textInputType: TextInputType.text,
                         onChanged: loginStore.setLogin,
                         enabled: !loginStore.loading,
-                        //controller: _controllerLogin,
+                        controller: _controllerSenha,
                       );
                     },
                   ),

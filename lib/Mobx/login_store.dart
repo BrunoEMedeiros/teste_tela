@@ -11,7 +11,7 @@ import 'package:testetela/helper.dart' as globals;
 
 part 'login_store.g.dart';
 
-const url = "http://192.168.0.100:3333";
+const url = "http://192.168.0.103:3333";
 
 class LoginStore = _LoginStore with _$LoginStore;
 
